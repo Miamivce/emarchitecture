@@ -18,10 +18,14 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://emarchitecture.be'),
   title: "EM Architecture | Architect Brasschaat Antwerp",
   description: "High-end architectural design studio in Brasschaat and Antwerp. Exceptional residential and commercial architecture with a focus on timeless, sophisticated design.",
-  keywords: "architect Brasschaat, architect Antwerp, architecture Brasschaat, architecture Antwerp, high-end architect Belgium, luxury architect, EM Architecture",
+  keywords: "architect Brasschaat, architect Antwerp, architecture Brasschaat, architecture Antwerp, high-end architect Belgium, luxury architect, EM Architecture, residential architecture, commercial architecture",
   authors: [{ name: "EM Architecture" }],
+  alternates: {
+    canonical: 'https://emarchitecture.be',
+  },
   openGraph: {
     type: "website",
     locale: "nl_BE",
@@ -29,11 +33,20 @@ export const metadata: Metadata = {
     siteName: "EM Architecture",
     title: "EM Architecture | Architect Brasschaat Antwerp",
     description: "High-end architectural design studio in Brasschaat and Antwerp. Exceptional residential and commercial architecture.",
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'EM Architecture - Architect Brasschaat Antwerp',
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "EM Architecture | Architect Brasschaat Antwerp",
     description: "High-end architectural design studio in Brasschaat and Antwerp.",
+    images: ['/og-image.jpg'],
   },
 };
 

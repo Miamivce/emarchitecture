@@ -35,6 +35,38 @@ export default function About() {
               With a meticulous attention to detail and a deep understanding of materiality, light, and form,
               we craft architectural solutions that are both beautiful and enduring.
             </motion.p>
+
+            <motion.div
+              className="pt-4 md:pt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <h3 className="text-sm tracking-[0.2em] uppercase text-foreground/50 font-light mb-4">
+                Services
+              </h3>
+              <ul className="space-y-2 text-sm sm:text-base font-light">
+                <li>Residential Architecture</li>
+                <li>Commercial Design</li>
+                <li>Renovation & Restoration</li>
+                <li>Interior Architecture</li>
+                <li>Design Consultation</li>
+              </ul>
+            </motion.div>
+
+            <motion.div
+              className="pt-4"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+            >
+              <h3 className="text-sm tracking-[0.2em] uppercase text-foreground/50 font-light mb-4">
+                Areas Served
+              </h3>
+              <p className="text-sm sm:text-base font-light">
+                Brasschaat, Antwerp, Antwerpen, and surrounding regions in Belgium
+              </p>
+            </motion.div>
           </div>
         </motion.div>
       </div>

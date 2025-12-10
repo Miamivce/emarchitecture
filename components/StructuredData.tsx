@@ -7,7 +7,7 @@ export default function StructuredData() {
         '@id': 'https://emarchitecture.be/#organization',
         name: 'EM Architecture',
         url: 'https://emarchitecture.be',
-        email: 'info@emarchitecture.be',
+        email: 'eline@emarchitecture.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Brasschaat',
@@ -27,6 +27,11 @@ export default function StructuredData() {
             '@type': 'Country',
             name: 'Belgium',
           },
+        ],
+        sameAs: [
+          // Add social media links here when available
+          // 'https://instagram.com/emarchitecture',
+          // 'https://linkedin.com/company/emarchitecture',
         ],
       },
       {
@@ -50,7 +55,7 @@ export default function StructuredData() {
         },
         url: 'https://emarchitecture.be',
         telephone: '+32',
-        email: 'info@emarchitecture.be',
+        email: 'eline@emarchitecture.com',
         openingHoursSpecification: {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
@@ -91,6 +96,78 @@ export default function StructuredData() {
         description:
           'High-end architectural design studio in Brasschaat and Antwerp. Exceptional residential and commercial architecture with a focus on timeless, sophisticated design.',
         inLanguage: 'nl-BE',
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://emarchitecture.be/#service-residential',
+        serviceType: 'Residential Architecture',
+        provider: {
+          '@id': 'https://emarchitecture.be/#organization',
+        },
+        areaServed: ['Brasschaat', 'Antwerp', 'Belgium'],
+        description: 'High-end residential architectural design services',
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://emarchitecture.be/#service-commercial',
+        serviceType: 'Commercial Design',
+        provider: {
+          '@id': 'https://emarchitecture.be/#organization',
+        },
+        areaServed: ['Brasschaat', 'Antwerp', 'Belgium'],
+        description: 'Sophisticated commercial architectural design',
+      },
+      {
+        '@type': 'Service',
+        '@id': 'https://emarchitecture.be/#service-renovation',
+        serviceType: 'Renovation & Restoration',
+        provider: {
+          '@id': 'https://emarchitecture.be/#organization',
+        },
+        areaServed: ['Brasschaat', 'Antwerp', 'Belgium'],
+        description: 'Architectural renovation and restoration services',
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': 'https://emarchitecture.be/#faq',
+        mainEntity: [
+          {
+            '@type': 'Question',
+            name: 'Where is EM Architecture located?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'EM Architecture is based in Brasschaat and Antwerp, Belgium, serving the surrounding regions.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What services does EM Architecture offer?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'EM Architecture offers residential architecture, commercial design, renovation and restoration, interior architecture, and design consultation services.',
+            },
+          },
+          {
+            '@type': 'Question',
+            name: 'What areas does EM Architecture serve?',
+            acceptedAnswer: {
+              '@type': 'Answer',
+              text: 'EM Architecture serves Brasschaat, Antwerp, Antwerpen, and surrounding regions in Belgium.',
+            },
+          },
+        ],
+      },
+      {
+        '@type': 'BreadcrumbList',
+        '@id': 'https://emarchitecture.be/#breadcrumb',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://emarchitecture.be',
+          },
+        ],
       },
     ],
   };
