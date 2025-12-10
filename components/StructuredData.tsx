@@ -7,7 +7,7 @@ export default function StructuredData() {
         '@id': 'https://emarchitecture.be/#organization',
         name: 'EM Architecture',
         url: 'https://emarchitecture.be',
-        email: 'eline@emarchitecture.com',
+        email: 'info@em-architecture.com',
         address: {
           '@type': 'PostalAddress',
           addressLocality: 'Brasschaat',
@@ -49,7 +49,7 @@ export default function StructuredData() {
           longitude: 4.4913,
         },
         url: 'https://emarchitecture.be',
-        email: 'eline@emarchitecture.com',
+        email: 'info@em-architecture.com',
         openingHoursSpecification: {
           '@type': 'OpeningHoursSpecification',
           dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],

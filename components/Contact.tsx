@@ -168,10 +168,10 @@ export default function Contact() {
                 Email
               </p>
               <a
-                href="mailto:eline@emarchitecture.com"
+                href="mailto:info@em-architecture.com"
                 className="block text-sm sm:text-base text-foreground/80 hover:text-accent transition-colors duration-300 active:text-accent"
               >
-                eline@emarchitecture.com
+                info@em-architecture.com
               </a>
             </motion.div>
 

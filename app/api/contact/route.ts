@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     // Check if API key is configured
     if (!process.env.RESEND_API_KEY) {
       return NextResponse.json(
-        { error: 'Email service not configured. Please contact us directly at eline@emarchitecture.com' },
+        { error: 'Email service not configured. Please contact us directly at info@em-architecture.com' },
         { status: 503 }
       );
     }
@@ -35,8 +35,8 @@ export async function POST(req: NextRequest) {
 
     // Send email via Resend
     const data = await resend.emails.send({
-      from: 'EM Architecture <noreply@emarchitecture.com>',
-      to: ['eline@emarchitecture.com'],
+      from: 'EM Architecture <noreply@em-architecture.com>',
+      to: ['info@em-architecture.com', 'eline@em-architecture.com'],
       replyTo: email,
       subject: `New Contact Form Submission from ${name}`,
       html: `
