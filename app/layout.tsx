@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import StructuredData from "@/components/StructuredData";
@@ -16,6 +16,12 @@ const inter = Inter({
   weight: ["300", "400", "500"],
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://emarchitecture.be'),
@@ -60,11 +66,6 @@ export const metadata: Metadata = {
     title: "EM Architecture | Architect Brasschaat Antwerp",
     description: "High-end architectural design studio in Brasschaat and Antwerp.",
     images: ['/og-image.jpg'],
-  },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-    maximumScale: 5,
   },
   other: {
     'geo.region': 'BE-VAN',
