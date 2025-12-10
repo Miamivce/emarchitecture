@@ -72,9 +72,6 @@ export async function POST(req: NextRequest) {
             <p style="color: rgba(26, 26, 26, 0.4); font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; margin: 0; font-family: 'Inter', sans-serif;">
               info@em-architecture.com
             </p>
-            <p style="color: rgba(26, 26, 26, 0.3); font-size: 10px; margin: 12px 0 0 0; font-family: 'Inter', sans-serif;">
-              emarchitecture.be
-            </p>
           </div>
         </div>
       `,
