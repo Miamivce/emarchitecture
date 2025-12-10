@@ -27,7 +27,7 @@ export default function About() {
             </motion.p>
 
             <motion.p
-              className="text-sm sm:text-base md:text-lg font-light"
+              className="text-base sm:text-lg md:text-xl font-light"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -45,7 +45,7 @@ export default function About() {
               <h3 className="text-sm tracking-[0.2em] uppercase text-foreground/50 font-light mb-4">
                 Services
               </h3>
-              <ul className="space-y-2 text-sm sm:text-base font-light">
+              <ul className="space-y-2 text-base sm:text-lg md:text-xl font-light">
                 <li>Residential Architecture</li>
                 <li>Commercial Design</li>
                 <li>Renovation & Restoration</li>
@@ -63,7 +63,7 @@ export default function About() {
               <h3 className="text-sm tracking-[0.2em] uppercase text-foreground/50 font-light mb-4">
                 Areas Served
               </h3>
-              <p className="text-sm sm:text-base font-light">
+              <p className="text-base sm:text-lg md:text-xl font-light">
                 Brasschaat, Antwerp, Antwerpen, and surrounding regions in Belgium
               </p>
             </motion.div>

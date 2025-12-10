@@ -28,11 +28,6 @@ export default function StructuredData() {
             name: 'Belgium',
           },
         ],
-        sameAs: [
-          // Add social media links here when available
-          // 'https://instagram.com/emarchitecture',
-          // 'https://linkedin.com/company/emarchitecture',
-        ],
       },
       {
         '@type': 'ProfessionalService',
@@ -54,7 +49,6 @@ export default function StructuredData() {
           longitude: 4.4913,
         },
         url: 'https://emarchitecture.be',
-        telephone: '+32',
         email: 'eline@emarchitecture.com',
         openingHoursSpecification: {
           '@type': 'OpeningHoursSpecification',

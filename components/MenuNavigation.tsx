@@ -21,6 +21,7 @@ export default function MenuNavigation({ activeSection, onSectionChange }: MenuN
       initial={{ opacity: 0, x: 20 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.8, delay: 0.5 }}
+      aria-label="Main navigation"
     >
       <div className="flex flex-col items-end gap-4 md:gap-6 text-xs sm:text-sm tracking-[0.15em] sm:tracking-[0.2em] uppercase">
         {navItems.map((item, index) => (

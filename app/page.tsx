@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <MenuNavigation activeSection={activeSection} onSectionChange={setActiveSection} />
-      <main className="relative z-10">
+      <main id="main-content" className="relative z-10">
         {/* All sections rendered in DOM for SEO - visibility controlled by CSS */}
         <section
           id="home"
@@ -21,6 +21,7 @@ export default function Home() {
             activeSection === 'home' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none absolute inset-0'
           }`}
           aria-hidden={activeSection !== 'home'}
+          aria-label="Home section"
         >
           <Hero />
         </section>
@@ -31,6 +32,7 @@ export default function Home() {
             activeSection === 'about' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none absolute inset-0'
           }`}
           aria-hidden={activeSection !== 'about'}
+          aria-label="About section"
         >
           <About />
         </section>
@@ -41,6 +43,7 @@ export default function Home() {
             activeSection === 'portfolio' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none absolute inset-0'
           }`}
           aria-hidden={activeSection !== 'portfolio'}
+          aria-label="Portfolio section"
         >
           <Portfolio />
         </section>
@@ -51,6 +54,7 @@ export default function Home() {
             activeSection === 'contact' ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none absolute inset-0'
           }`}
           aria-hidden={activeSection !== 'contact'}
+          aria-label="Contact section"
         >
           <Contact />
         </section>
